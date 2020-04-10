@@ -3,13 +3,17 @@
 Forked from the UFHealth CSSALT Lab project for an open source ventilator design, this fork contains detailed assembly documentation, clarified bill of materials, electrical schematics and updated controller code. Our goal is to have these contributions pulled into the core project to help accellerate public adoption of the project.
 
 * **Full assembly documentation via Dozuki** Free and open, updated project documentation hosted by Dozuki. Documentation can now be refined in a community driven manner while still maintaining the integratity of version control.
+https://www.opensourceventilation.org/Guide/Open+Source+Ventilator+Assembly+(MBX+v1)/4?lang=en
+
 * **3D assemblies** Full 3D assemblies rendered for the entire build.
+
 * **Clear and transparent bill of materials** Full bill of materials has been updated and refined to include additional clarity and detail on the raw material requirements.
-* **Detailed controller schematics** 
+https://docs.google.com/spreadsheets/d/1ovyo2lUL0noa83XnP0gwtcc2B9GDPE4pJonda6fv0Mo/edit?usp=sharing
 
+* **Detailed controller schematics**
+Detailed controller schematics have been updated and are hosted here for additional contributions
+https://upverter.com/design/mbx/b782985665a208aa/
 
-
-# Open_Source_Ventilator
-Open source for use worldwide and contributions from others worldwide
-
-Created MBX Fork with Electrical BOM and Assembly instruction in Dozuki
+<p align="center">
+  <img src="./img/assembly_overview.jpg" alt="Assembly Overview" width="738">
+</p>
