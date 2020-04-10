@@ -43,7 +43,7 @@ Added a branch to run test without pressure sensor. Information about test progr
 
 
 <p align="center">
-  <img src="./img/assembly_overview.jpg" alt="Assembly Overview" width="738">
+  <img src="./img/overallmbxv1.jpg" alt="Assembly Overview" width="738">
 </p>
 
 The original project can be found here: https://simulation.health.ufl.edu/technology-development/open-source-ventilator-project/
