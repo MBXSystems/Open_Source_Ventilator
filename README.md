@@ -1,5 +1,5 @@
 # UF Open Source Ventilator Project - MBX Systems Proposed Merge
--------------------
+
 
 Forked from the UFHealth CSSALT Lab project for an open source ventilator design, this fork contains detailed assembly documentation, clarified bill of materials, electrical schematics and updated controller code.
 
