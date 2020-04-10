@@ -162,25 +162,23 @@ static void fsmPause()
 //--------- Testing --------
 void breatherTestLoop()
 {
-    LOG("Breather Test Loop Cycle!");
+int button_is_pressed = !digitalRead(TEST_LOOP_BUTTON_PIN);
+    if (button_is_pressed) {
+        toggleTestLoop();
+    }
     if (checkTestLoopStatus()) {
-        LOG("Breather test is running!");
+
         // figure out the breath rate cycle time
-        int cycle_time = round(TEST_BREATHER_CYCLE_TIME_CONSTANT / getTestPotentiometerValue());
-        Serial.print("Cycle time: ");
-        Serial.print(cycle_time);
-        Serial.println("");
-        Serial.print("timer expired?: ");
-        Serial.print(halCheckTimerExpired(test_breather_event_time, cycle_time));
-        Serial.println("");
+        int cycle_time = getTestPotentiometerValue()*4;
+        cycle_time = (cycle_time < 800) ? 800 : cycle_time;
         // if the last breather event + cycle time is exceeded, toggle the vent state
         if (halCheckTimerExpired(test_breather_event_time, cycle_time)) {
             LOG("Timer expired! change the vent status!");
             if (checkTestVentStatus()) { // vent is on
-                halValveInOff();
+                digitalWrite(VALVE_IN_PIN, LOW);
                 LOG("Turned vent off!");
             } else {
-                halValveInOn();
+                digitalWrite(VALVE_IN_PIN, HIGH);
                 LOG("Turned vent on!");
             }
             // reset test breather timer

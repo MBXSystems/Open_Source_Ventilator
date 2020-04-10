@@ -237,7 +237,8 @@ void halInit(uint8_t reset_val) {
   digitalWrite(VALVE_IN_PIN, HIGH);       // turn on pullup resistors
   pinMode(VALVE_OUT_PIN, OUTPUT);           // set pin to input
   digitalWrite(VALVE_OUT_PIN, HIGH);       // turn on pullup resistors
-
+  pinMode(TEST_LOOP_BUTTON_PIN, INPUT);  
+  digitalWrite(TEST_LOOP_BUTTON_PIN, LOW);
   tm_key_sampling = halStartTimerRef();
   initWdt(reset_val);
   pressInit();
